@@ -183,6 +183,18 @@ describe('App', () => {
     expect(screen.queryByText(/No se pudieron recuperar/)).not.toBeInTheDocument();
   });
 
+  it('RQ-14.6 closing the notice without changes and reloading shows the notice again', async () => {
+    localStorage.setItem(STORAGE_KEY, '{esto no es válido');
+    const { user, unmount } = setup();
+    await user.click(screen.getByRole('button', { name: 'Entendido' }));
+    unmount();
+    render(<App />);
+    expect(screen.getByRole('alert')).toHaveTextContent(
+      'No se pudieron recuperar los datos guardados. Se empezó un torneo nuevo.',
+    );
+    expect(localStorage.getItem(STORAGE_KEY)).toBe('{esto no es válido');
+  });
+
   it('RQ-13.2 the first time the app opens there is no error notice', () => {
     render(<App />);
     expect(screen.queryByRole('alert')).not.toBeInTheDocument();

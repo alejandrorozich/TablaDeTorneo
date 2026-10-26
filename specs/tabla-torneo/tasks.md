@@ -236,7 +236,8 @@
   los estados vacíos y `StorageNotice`; estilos base y foco visible.
 - **Cubre:** RQ-02.2, RQ-02.3, RQ-03.1 (vista), RQ-03.2, RQ-06.5, RQ-07.2
   (vista), RQ-08.1 (vista), RQ-08.2 (vista), RQ-12.4 (vista), RQ-13.1,
-  RQ-13.4, RQ-14.1, RQ-14.3, RNF-02.2, RNF-02.3, RNF-02.4, RNF-03.1.
+  RQ-13.4, RQ-14.1, RQ-14.3, RQ-14.6 (spec v1.1, H-3), RNF-02.2, RNF-02.3,
+  RNF-02.4, RNF-03.1.
 - **Archivos:** `src/components/App.tsx`, `src/components/App.module.css`,
   `src/components/StorageNotice.tsx` (+ css), `src/index.css`,
   `src/components/texts.ts`.
@@ -251,7 +252,8 @@
   - `RQ-13.1` desmontar y volver a montar muestra los mismos datos.
   - `RQ-13.4` lo escrito sin guardar no sobrevive al remontaje.
   - `RQ-14.1` con `{esto no es válido` guardado se ve `T-27` y un torneo
-    vacío; `RQ-14.3` `Entendido` lo oculta.
+    vacío; `RQ-14.3` `Entendido` lo oculta; `RQ-14.6` cerrar el aviso sin
+    cambios y recargar lo vuelve a mostrar (agregada en spec v1.1).
   - `RNF-02.2` el flujo agregar equipo → cargar resultado se completa solo
     con teclado.
   - `RNF-02.4` el aviso `T-27` tiene rol de alerta/estado.
@@ -309,7 +311,13 @@ Cada criterio de la spec y la(s) tarea(s) que lo cubren. ✔ = cubierto.
 | | | | RNF-02.6 | T-09, T-10 |
 | | | | RNF-03.1 | T-01, T-12 (revisión + manual) |
 
-**Totales:** 65 criterios funcionales y 9 no funcionales; los 74 están
+Criterio agregado en la spec v1.1 (hallazgo H-3, aprobado el 2026-10-25):
+
+| Criterio | Tareas |
+|---|---|
+| RQ-14.6 | T-12 |
+
+**Totales:** 66 criterios funcionales y 9 no funcionales; los 75 están
 cubiertos por al menos una tarea. Ningún criterio queda sin tarea.
 
 ### Cobertura por tarea
@@ -327,4 +335,4 @@ cubiertos por al menos una tarea. Ningún criterio queda sin tarea.
 | T-09 | Interfaz | 14 |
 | T-10 | Interfaz | 13 |
 | T-11 | Interfaz | 3 |
-| T-12 | Interfaz | 17 |
+| T-12 | Interfaz | 18 |

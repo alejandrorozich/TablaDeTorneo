@@ -5,7 +5,8 @@
 > código, salvo que se acuerde cambiar la spec (ver `CLAUDE.md`).
 
 - **Estado:** aprobada (2026-10-25)
-- **Versión:** 1.0
+- **Versión:** 1.1 — v1.0 aprobada el 2026-10-25; v1.1 agrega RQ-14.6
+  (hallazgo H-3 de `verification.md`, aprobado el 2026-10-25).
 - **Identificadores:** historias `HU-x`, requisitos funcionales `RQ-xx`,
   criterios `RQ-xx.n`, requisitos no funcionales `RNF-xx` con criterios
   `RNF-xx.n`. Los identificadores no se renumeran.
@@ -525,6 +526,10 @@ app no falla: empieza con un torneo vacío y avisa al organizador.
 - **RQ-14.5** — *Dado* que los datos guardados son inválidos, *cuando* carga la
   app, *entonces* no se recupera ningún dato parcial (no se mezclan equipos
   válidos con datos descartados).
+- **RQ-14.6** — *Dado* que se muestra el aviso `[T-27]`, *cuando* el
+  organizador lo cierra con `[T-28]` sin hacer ningún cambio y recarga la
+  página, *entonces* el aviso vuelve a mostrarse, porque los datos inválidos
+  siguen guardados hasta el primer cambio (RQ-14.4).
 
 ---
 
