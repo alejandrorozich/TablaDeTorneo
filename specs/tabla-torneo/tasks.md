@@ -17,7 +17,7 @@
 ---
 
 ## T-01 — Preparar el proyecto
-- [ ] **Objetivo:** dejar el esqueleto Vite + React + TypeScript strict con
+- [x] **Objetivo:** dejar el esqueleto Vite + React + TypeScript strict con
   Vitest, RTL, ESLint y los cuatro scripts de "verde" funcionando.
 - **Cubre:** base de todas las tareas; texto `T-01` (spec §5); RNF-03.1
   (solo dependencias permitidas, ninguna de red).
