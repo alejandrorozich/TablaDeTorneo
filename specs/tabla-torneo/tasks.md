@@ -72,7 +72,7 @@
 - **Hecha cuando:** las pruebas pasan y los cuatro chequeos están en verde.
 
 ## T-04 — Goles y estadísticas de la tabla
-- [ ] **Objetivo:** validar goles (`parseGoals`), calcular las estadísticas de
+- [x] **Objetivo:** validar goles (`parseGoals`), calcular las estadísticas de
   cada fila (`computeStandings` sin desempates finos todavía: solo
   estadísticas) y `formatGoalDifference`. Crear el helper de pruebas
   `buildTournament`.
