@@ -218,7 +218,7 @@
 - **Hecha cuando:** las pruebas pasan y los cuatro chequeos están en verde.
 
 ## T-11 — Tabla de posiciones en la interfaz
-- [ ] **Objetivo:** `StandingsTable` que muestra las filas de
+- [x] **Objetivo:** `StandingsTable` que muestra las filas de
   `computeStandings` con los encabezados y formatos de la spec.
 - **Cubre:** RQ-09.1 (vista), RQ-09.2 (vista), RNF-02.5.
 - **Archivos:** `src/components/StandingsTable.tsx`,

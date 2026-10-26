@@ -1,0 +1,43 @@
+.section {
+  margin-bottom: 2rem;
+}
+
+.empty {
+  font-style: italic;
+}
+
+.scroll {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  font-variant-numeric: tabular-nums;
+}
+
+.table th,
+.table td {
+  padding: 0.4rem 0.6rem;
+  border-bottom: 1px solid #e4e7eb;
+  text-align: center;
+}
+
+.table thead th {
+  background: #243b53;
+  color: #ffffff;
+}
+
+.table abbr {
+  text-decoration: none;
+  cursor: help;
+}
+
+.table .teamColumn {
+  text-align: left;
+}
+
+.table tbody th {
+  font-weight: 600;
+}
