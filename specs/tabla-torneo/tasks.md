@@ -90,7 +90,7 @@
 - **Hecha cuando:** las pruebas pasan y los cuatro chequeos están en verde.
 
 ## T-05 — Orden de la tabla y desempates
-- [ ] **Objetivo:** ordenar las filas por Pts, DG, GF, puntos entre empatados
+- [x] **Objetivo:** ordenar las filas por Pts, DG, GF, puntos entre empatados
   (una sola vez por grupo) y orden alfabético del español (ADR-2).
 - **Cubre:** RQ-07.2 (tabla), RQ-08.1 (tabla), RQ-09.2, RQ-10.1, RQ-10.2,
   RQ-10.3, RQ-11.1 a RQ-11.8, RNF-01.2.
