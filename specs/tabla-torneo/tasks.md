@@ -109,7 +109,7 @@
 - **Hecha cuando:** las pruebas pasan y los cuatro chequeos están en verde.
 
 ## T-06 — Reglas del torneo: bloqueo y validación completa
-- [ ] **Objetivo:** `isLocked` y `validateTournament` (todo o nada, ADR-4).
+- [x] **Objetivo:** `isLocked` y `validateTournament` (todo o nada, ADR-4).
 - **Cubre:** RQ-06.4 (dominio), RQ-12 (regla de bloqueo), RQ-14.2, RQ-14.5.
 - **Archivos:** `src/domain/tournament.ts`.
 - **Pruebas primero:** `src/domain/tournament.test.ts`
