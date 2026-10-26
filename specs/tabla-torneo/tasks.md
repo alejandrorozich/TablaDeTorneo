@@ -149,7 +149,7 @@
 - **Hecha cuando:** las pruebas pasan y los cuatro chequeos están en verde.
 
 ## T-08 — Persistencia y hook `useTournament`
-- [ ] **Objetivo:** `loadTournament` / `saveTournament` con versión (ADR-4) y
+- [x] **Objetivo:** `loadTournament` / `saveTournament` con versión (ADR-4) y
   el hook que inicializa el reducer desde `localStorage` y guarda tras cada
   cambio.
 - **Cubre:** RQ-13.1, RQ-13.2, RQ-13.3, RQ-14.1, RQ-14.2, RQ-14.4, RQ-14.5.
