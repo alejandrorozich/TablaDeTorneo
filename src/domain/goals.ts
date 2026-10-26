@@ -1,6 +1,10 @@
 const MAX_GOALS = 99;
 const DIGITS_ONLY = /^[0-9]+$/;
 
+export function isValidGoals(value: unknown): value is number {
+  return Number.isInteger(value) && (value as number) >= 0 && (value as number) <= MAX_GOALS;
+}
+
 /** Parses a goals value: digits only (surrounding spaces allowed), integer from 0 to 99. */
 export function parseGoals(raw: string): number | null {
   const value = raw.trim();

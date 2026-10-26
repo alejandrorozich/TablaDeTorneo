@@ -1,4 +1,5 @@
 import { generateFixture } from './fixture';
+import { isValidGoals } from './goals';
 import { comparisonKey, normalizeName } from './teamName';
 import type { MatchId, Result, Team, Tournament } from './types';
 
@@ -18,10 +19,6 @@ export function isLocked(tournament: Tournament): boolean {
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === 'object' && value !== null && !Array.isArray(value);
-}
-
-function isGoals(value: unknown): value is number {
-  return Number.isInteger(value) && (value as number) >= 0 && (value as number) <= 99;
 }
 
 function parseTeams(value: unknown, nextTeamNumber: number): Team[] | null {
@@ -48,7 +45,7 @@ function parseResults(value: unknown, teams: readonly Team[]): Record<MatchId, R
   const results: Record<MatchId, Result> = {};
   for (const [id, result] of entries) {
     if (!matchIds.has(id) || !isRecord(result)) return null;
-    if (!isGoals(result.homeGoals) || !isGoals(result.awayGoals)) return null;
+    if (!isValidGoals(result.homeGoals) || !isValidGoals(result.awayGoals)) return null;
     results[id] = { homeGoals: result.homeGoals, awayGoals: result.awayGoals };
   }
   return results;

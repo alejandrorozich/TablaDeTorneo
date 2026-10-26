@@ -126,7 +126,7 @@
 - **Hecha cuando:** las pruebas pasan y los cuatro chequeos están en verde.
 
 ## T-07 — Reducer del torneo
-- [ ] **Objetivo:** `tournamentReducer` con las acciones del plan §3,
+- [x] **Objetivo:** `tournamentReducer` con las acciones del plan §3,
   aplicando bloqueo y validaciones (ADR-5).
 - **Cubre:** RQ-01.1, RQ-01.7, RQ-02.1, RQ-03.1, RQ-03.3, RQ-06.1, RQ-06.4,
   RQ-07.2, RQ-08.1, RQ-08.2, RQ-08.3, RQ-12.2, RQ-12.4.
