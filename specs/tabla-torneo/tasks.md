@@ -50,7 +50,7 @@
 - **Hecha cuando:** las 7 pruebas pasan y los cuatro chequeos están en verde.
 
 ## T-03 — Generación del fixture (método del círculo)
-- [ ] **Objetivo:** implementar `generateFixture` y `matchId` según ADR-1 y
+- [x] **Objetivo:** implementar `generateFixture` y `matchId` según ADR-1 y
   ADR-3.
 - **Cubre:** RQ-02.2 (dominio: sin fixture con < 3 equipos), RQ-04.1, RQ-04.2,
   RQ-04.3, RQ-04.4, RQ-04.5, RQ-05.1, RQ-05.2, RQ-05.3, RNF-01.1.
