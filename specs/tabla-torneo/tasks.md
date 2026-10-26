@@ -169,7 +169,7 @@
 - **Hecha cuando:** las pruebas pasan y los cuatro chequeos están en verde.
 
 ## T-09 — Sección de equipos
-- [ ] **Objetivo:** `TeamsSection` con formulario, errores, contador, lista,
+- [x] **Objetivo:** `TeamsSection` con formulario, errores, contador, lista,
   eliminación y bloqueo; textos en `texts.ts`.
 - **Cubre:** RQ-01.1, RQ-01.2, RQ-01.3, RQ-01.5, RQ-01.7, RQ-01.8, RQ-02.1,
   RQ-02.4, RQ-12.1, RQ-12.3, RNF-02.1, RNF-02.2, RNF-02.4, RNF-02.6.

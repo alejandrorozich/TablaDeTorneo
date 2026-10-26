@@ -1,0 +1,58 @@
+.section {
+  margin-bottom: 2rem;
+}
+
+.form {
+  margin-bottom: 0.75rem;
+}
+
+.fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.row input {
+  flex: 1;
+  max-width: 20rem;
+  padding: 0.4rem 0.6rem;
+}
+
+.error {
+  margin: 0.5rem 0 0;
+  color: #b42318;
+}
+
+.locked {
+  padding: 0.5rem 0.75rem;
+  border-left: 4px solid #b54708;
+  background: #fffaeb;
+}
+
+.count {
+  margin: 0.5rem 0;
+  color: #52606d;
+}
+
+.empty {
+  font-style: italic;
+}
+
+.list {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 24rem;
+  padding: 0.2rem 0;
+}
