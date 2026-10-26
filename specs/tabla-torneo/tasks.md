@@ -193,7 +193,7 @@
 - **Hecha cuando:** las pruebas pasan y los cuatro chequeos están en verde.
 
 ## T-10 — Fixture y carga de resultados en la interfaz
-- [ ] **Objetivo:** `FixtureSection` y `MatchRow` (pendiente / jugado /
+- [x] **Objetivo:** `FixtureSection` y `MatchRow` (pendiente / jugado /
   edición, ADR-6).
 - **Cubre:** RQ-04.6, RQ-05.4, RQ-06.1, RQ-06.2, RQ-06.3, RQ-07.1, RQ-07.3,
   RQ-07.4, RQ-08.3, RNF-02.1, RNF-02.2, RNF-02.4, RNF-02.6.
