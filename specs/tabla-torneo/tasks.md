@@ -33,7 +33,7 @@
   chequeos están en verde; `npm ls --prod` solo lista `react` y `react-dom`.
 
 ## T-02 — Nombres de equipo: normalización y validación
-- [ ] **Objetivo:** normalizar nombres, calcular la clave de comparación y
+- [x] **Objetivo:** normalizar nombres, calcular la clave de comparación y
   validar un nombre nuevo contra la lista actual.
 - **Cubre:** RQ-01.2, RQ-01.3, RQ-01.4, RQ-01.5, RQ-01.6, RQ-02.1, RQ-03.3.
 - **Archivos:** `src/domain/types.ts`, `src/domain/teamName.ts`,
