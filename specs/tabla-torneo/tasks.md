@@ -232,7 +232,7 @@
 - **Hecha cuando:** las pruebas pasan y los cuatro chequeos están en verde.
 
 ## T-12 — Integración de la app, aviso de datos corruptos y estilos
-- [ ] **Objetivo:** componer `App` con `useTournament`, las tres secciones,
+- [x] **Objetivo:** componer `App` con `useTournament`, las tres secciones,
   los estados vacíos y `StorageNotice`; estilos base y foco visible.
 - **Cubre:** RQ-02.2, RQ-02.3, RQ-03.1 (vista), RQ-03.2, RQ-06.5, RQ-07.2
   (vista), RQ-08.1 (vista), RQ-08.2 (vista), RQ-12.4 (vista), RQ-13.1,
