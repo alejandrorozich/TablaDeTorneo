@@ -121,13 +121,13 @@ Abreviaturas de archivos de prueba: `teamName` = `src/domain/teamName.test.ts`,
 
 | ID | Hallazgo | Dónde | Resolución | Estado |
 |---|---|---|---|---|
-| H-1 | `@testing-library/dom` no figura en la lista de dependencias permitidas de `CLAUDE.md`, pero es una *peer dependency* obligatoria de `@testing-library/react` (permitida). Se instaló en T-01 junto con RTL. | `CLAUDE.md` › Dependencias | Se propone agregarla a la lista permitida (texto exacto abajo). Requiere OK por ser un cambio de constitución. | Pendiente de aprobación |
+| H-1 | `@testing-library/dom` no figura en la lista de dependencias permitidas de `CLAUDE.md`, pero es una *peer dependency* obligatoria de `@testing-library/react` (permitida). Se instaló en T-01 junto con RTL. | `CLAUDE.md` › Dependencias | Se agregó a la lista permitida de `CLAUDE.md` con el texto propuesto abajo, aprobado por el organizador del proyecto el 2026-10-25. | Resuelto (constitución actualizada) |
 | H-2 | RQ-11.6 no tiene un ejemplo numérico en la spec. Con 3 empatados la regla "una sola vez" no se distingue de la recursiva (P-2), así que hizo falta un caso con 4 empatados. | `spec.md` › RQ-11.6 | Se construyó en la prueba una liga de 6 equipos (Tiburones, Pumas, Osos, Ranas empatados en Pts 7, DG 0, GF 2; Pumas le ganó a Osos pero Osos va primero por orden alfabético). La regla de la spec era suficiente: no hizo falta cambiarla. | Resuelto sin cambio de spec |
 | H-3 | La spec no dice qué pasa si se cierra el aviso `T-27` **sin** hacer cambios y se recarga. Con la implementación actual, los datos inválidos siguen guardados y el aviso vuelve a aparecer. No contradice ningún criterio: RQ-14.4 solo habla del primer cambio. | `spec.md` › RQ-14 | Se propone documentar el comportamiento actual como RQ-14.6 (texto exacto abajo). | Pendiente de aprobación |
 | H-4 | El plan proponía `tsc -b --noEmit` con referencias de proyecto. Se usó un único `tsconfig.json` con `noEmit` (el plan ya admitía la alternativa). Además, `tournament.ts` exporta `STORAGE_VERSION` y `emptyTournament`, que el plan no listaba. | `plan.md` §1 y §3 | Detalles de implementación que no cambian el comportamiento. Se registran aquí; no se modificó el plan. | Registrado |
 | H-5 | RNF-02.6 pide nombres accesibles con el partido para `[T-05]`, `[T-20]`, `[T-22]` y `[T-23]`. La implementación aplica lo mismo a `[T-25]` (`Cancelar Tigres vs Pumas`). El texto visible sigue siendo `Cancelar`. | `MatchRow.tsx` | Mejora de accesibilidad compatible con la spec; no cambia ningún texto visible. | Registrado |
 
-### Textos propuestos (pendientes de aprobación)
+### Textos propuestos y aprobados
 
 **H-1 — `CLAUDE.md`, sección "Dependencias", primer punto de la lista "sin
 preguntar":**
@@ -158,6 +158,7 @@ preguntar":**
 | Solo verificación manual o por revisión de código (sin prueba automática) | 2 (RNF-02.3, RNF-03.1) |
 
 - **Pruebas automáticas:** 192 en 13 archivos, todas en verde.
-- **Hallazgos:** 5 (H-1 a H-5). Dos pendientes de aprobación (H-1, H-3), uno
-  resuelto sin cambio de spec (H-2) y dos registrados (H-4, H-5). Ninguno
+- **Hallazgos:** 5 (H-1 a H-5). H-1 resuelto con cambio de constitución,
+  H-3 pendiente de aprobación, H-2 resuelto sin cambio de spec, y H-4 y H-5
+  registrados. Ninguno
   deja un criterio sin cumplir.

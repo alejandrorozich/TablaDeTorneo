@@ -42,8 +42,8 @@ desempates. Corre solo en el navegador: sin backend, sin red y sin deploy.
 
 Se pueden instalar **sin preguntar** (siempre como `devDependencies`):
 - `vite`, `@vitejs/plugin-react`, `typescript`.
-- `vitest`, `jsdom`, `@testing-library/react`, `@testing-library/jest-dom`,
-  `@testing-library/user-event`.
+- `vitest`, `jsdom`, `@testing-library/react`, `@testing-library/dom`,
+  `@testing-library/jest-dom`, `@testing-library/user-event`.
 - `eslint` y sus plugins/configuraciones para TypeScript y React
   (`typescript-eslint`, `eslint-plugin-react-hooks`,
   `eslint-plugin-react-refresh`, `@eslint/js`, `globals`).
